@@ -1,0 +1,38 @@
+/* Container for the profile list */
+.profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center-align profile cards horizontally */
+}
+
+/* Style for individual profile cards */
+.profile-card {
+  background-color: #ffffff; /* White background for the card */
+  border: 1px solid #e2e8f0; /* Light border for the card */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+  padding: 24px; /* Increased padding for better spacing */
+  margin-bottom: 24px; /* More space between cards */
+  width: 100%; /* Full width within parent container */
+  max-width: 400px; /* Maximum width for the card */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effect */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Ensure the card width and alignment are consistent */
+}
+
+/* Center the profile cards within their container */
+.profile-card {
+  margin: 0 auto; /* Center-align individual cards */
+}
+
+/* Ensure responsive adjustments */
+@media (max-width: 768px) {
+  .profile-list {
+    flex-direction: column; /* Stack profile cards vertically on smaller screens */
+    align-items: center; /* Center-align profile cards horizontally */
+  }
+}

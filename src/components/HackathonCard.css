@@ -1,0 +1,41 @@
+/* src/components/HackathonCard.css */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Adjust based on your preference */
+    background-color: #fff;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .card .description {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card .description-content {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .card .date,
+  .card .location {
+    font-size: 1rem;
+    color: #555;
+  }

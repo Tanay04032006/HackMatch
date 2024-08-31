@@ -1,0 +1,109 @@
+/* src/components/ProfileCard.css */
+
+.profile-card {
+    background-color: #ffffff; /* White background for the card */
+    border: 1px solid #e2e8f0; /* Light border for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between cards */
+    width: 350px; /* Fixed width for the card */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effect */
+    text-align: center; /* Center text and content inside the card */
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.05); /* Slightly larger size on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+  }
+  
+  .profile-card h3 {
+    color: #1F2937; /* Dark color for the name */
+    font-size: 24px;
+    font-weight: 700; /* Bold font weight */
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-card p {
+    color: #4A5568; /* Slightly lighter color for text */
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+  
+  .profile-card p span {
+    font-weight: 700; /* Bold font weight for "Skills" */
+  }
+  
+  .profile-card a {
+    color: #1F2937; /* Dark color for links */
+    text-decoration: none;
+    font-weight: 500; /* Medium font weight for links */
+  }
+  
+  .profile-card a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 15px; /* Adjust padding for smaller screens */
+      width: 100%; /* Make card width responsive */
+    }
+  
+    .profile-card h3 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .profile-card p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* src/components/Container.css */
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the profile cards */
+  }
+  
+  .tag-filter {
+    margin-bottom: 30px; /* Increased bottom margin to separate from other sections */
+  }
+  
+  .tag-filter label {
+    display: block;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    font-weight: 600; /* Bold font weight for better readability */
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between tag items */
+  }
+  
+  .tag-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between tag checkboxes */
+  }
+  
+  .tag-checkbox input {
+    margin-right: 10px; /* Space between checkbox and label text */
+  }
+  

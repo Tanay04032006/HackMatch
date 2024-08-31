@@ -1,0 +1,63 @@
+/* src/components/Navbar.css */
+
+/* Import a font from Google Fonts or a similar service */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+  padding: 10px 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for separation */
+  font-family: 'Roboto', sans-serif; /* Use the imported font */
+}
+
+.website-name {
+  font-size: 24px;
+  font-weight: 700; /* Bold font for the website name */
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 500; /* Medium-bold font weight for links */
+  transition: transform 0.3s, font-weight 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  transform: scale(1.1); /* Slightly larger size on hover */
+  font-weight: 700; /* Bold font on hover */
+  color: #FFD700; /* Highlight color on hover */
+}
+
+/* Special styling for the Community Chat Rooms link */
+.nav-link-community {
+  color: #ffffff; /* Keep the color the same */
+  font-weight: 700; /* Bold font for emphasis */
+  border-bottom: none; /* Remove underline */
+}
+
+.nav-link-community:hover {
+  color: #FF5733; /* Change color on hover */
+  border-bottom: none; /* No underline on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}
